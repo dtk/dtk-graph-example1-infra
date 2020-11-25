@@ -1,0 +1,14 @@
+kind: KubeCluster
+metadata:
+  name: default
+spec:
+  reference:
+    type: eks
+    eksInfo:
+      name: k8s-r8
+      region: us-east-1
+  namespaces:
+  - default
+  - test1
+  - staging
+  
